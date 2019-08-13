@@ -1,0 +1,70 @@
+<html>
+
+<head>
+	<title>TROGJ Connect and Work</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+	<!-- Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	    crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	    crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	    crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap -->
+
+	<link rel="styleSheet" href="style.css" type="text/css" media="screen">
+	<script>
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip({
+				html: true
+			});
+		});
+	</script>
+</head>
+
+<body style="background-image: url('images/bg_1.jpg');">
+
+	<nav class="navbar navbar-fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="/"><img class="demo-logo" src="images/caw_Logo_onDark.png" ></a>
+		</div>
+	</nav>
+
+	<div id="main-container" class="container">
+
+		<div id="not-logged" class=" vertical-center">
+			<div id="img-div"><img src="images/caw_Logo_Regular.png"/></div>
+			<form class="form-group jumbotron" action="/auth" method="post">
+				<P style="color: red;text-align: center">
+					<%=message_user_error%>
+				</P>
+				<p>
+					<label>User Name</label>
+					<input class="form-control" type="text" name="user" required="true">
+				</p>
+				<p>
+					<label>Password</label>
+					<input class="form-control" type="password" name="pass" required="true">
+				</p>
+				<p class="text-center">
+					<button class="btn btn-lg btn-info" type="submit">Log in</button>
+				</p>
+			</form>
+
+		</div>
+	</div>
+
+	<nav class="navbar navbar-fixed-bottom">
+		<div class=" container">
+			<div >Copyright &copy 2018 VDC.cloud Managed Services Ltd</div>
+			<img class="openvidu-logo" src="images/favicon.ico"/>
+		</div>
+	</nav>
+
+</body>
+
+</html>

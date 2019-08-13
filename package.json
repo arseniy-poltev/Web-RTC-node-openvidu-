@@ -1,0 +1,28 @@
+{
+  "name": "openvidu-mvc-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.js 35.230.154.159:4443 MY_SECRET"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenVidu/openvidu-tutorials.git"
+  },
+  "author": "openvidu@gmail.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/OpenVidu/openvidu-tutorials/issues"
+  },
+  "homepage": "https://github.com/OpenVidu/openvidu-tutorials#readme",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "ejs": "2.6.1",
+    "express": "4.16.3",
+    "smsghjs":"latest",
+    "express-session": "1.15.6",
+    "openvidu-node-client": "2.0.0"
+  }
+}

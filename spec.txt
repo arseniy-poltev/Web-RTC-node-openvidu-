@@ -1,0 +1,27 @@
+project name:POC build using Angular JS, OpenVidu.io and KMS for WebRTC Multi-party Calling -- 2
+
+- description
+
+Hello
+
+I am looking for an initial proof of concept web app build only for now for webRTC multi-party calling between up to six participants.
+
+Angular App, OpenVidu Server and KMS to run in the same machine with an SSL certificate
+
+Backend to be on Google Cloud using a Ubuntu 16.04 host.
+
+https://openvidu.io/docs/deployment/deploying-ubuntu/
+
+https://openvidu.io/docs/tutorials/openvidu-insecure-angular/
+
+- One-to-One, One-to-Many, Many-to-Many calls
+
+- Send audio + video, audio-only or video-only streams
+
+- Broadcast text messages
+
+- Mute any track whenever you want
+
+- Share your screen
+
+Regards,
